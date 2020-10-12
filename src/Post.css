@@ -1,0 +1,147 @@
+.post__contain-body {
+  width: 80%;
+  margin: 30px auto;
+  border: 2px solid rgb(13, 3, 95);
+  background-color: rgb(42, 5, 146);
+  position: relative;
+  padding: 10px;
+  color: white;
+}
+
+.post__contain.num {
+  position: absolute;
+  top: -20px;
+  left: -30px;
+  background-color: rgb(36, 110, 221);
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+}
+
+.post__contain.header {
+  margin: 5px 10px 10px;
+  border-bottom: 2px solid rgb(124, 119, 119);
+  color: rgb(159, 210, 255);
+}
+
+.post__contain.plus {
+  height: 50px;
+  width: 50px;
+  font-size: 25px;
+  border-radius: 50%;
+  line-height: 50px;
+  font-weight: bolder;
+  color: black;
+  background-color: aqua;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.comments {
+  background-color: rgb(188, 220, 236);
+  width: 100%;
+  color: black;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.comment__contain {
+  margin: 20px 10px;
+  border-bottom: 2px solid rgb(163, 163, 163);
+  transition: all 0.3s ease-in;
+  animation: display 1s linear;
+}
+
+@keyframes display {
+  0% {
+    transform: translateY(-70%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.comment__body {
+  margin-left: 13px;
+  font-size: 1.1em;
+}
+
+.comment__name {
+  font-size: 1.25em;
+}
+
+.comment__name i {
+  background-color: azure;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.comment__email {
+  text-align: right;
+}
+
+.header__post {
+  height: 13vh;
+  margin-bottom: 10px;
+  background-color: rgba(145, 211, 255, 0.8);
+  border-bottom: 2px solid darkblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__post button {
+  background-color: darkblue;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.header__post .header.nav {
+  display: flex;
+  column-gap: 20px;
+  font-size: 1.3em;
+  margin: 0 20px;
+}
+
+.header__post .header.nav a {
+  text-decoration: none;
+  color: black;
+}
+button:focus,
+input:focus {
+  outline: none;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+
+  50% {
+    opacity: 0.3;
+    transform: translateY(-30%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
